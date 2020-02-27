@@ -161,20 +161,18 @@
 		"hat": "https://i.imgur.com/UvrUIU0.png",
 		"icon": "donator"
 	},
-	"aqu (chun li)": {
+	"aqu": {
 		"uid": "16999",
-		"_img": true,
-		"_trex customImg": ["https://i.imgur.com/e6SeF0w.png", "https://i.imgur.com/a7jFdt5.png"],
-		"_customImg": ["https://i.imgur.com/RxV0AaM.png", "https://i.imgur.com/Kiatxhz.png"],
-		"_customIcon": ["https://i.imgur.com/4dcqWYN.png", "Aquliax 🍁"],
-		"_hat": "Disabled",
-		"_customIcon": ["https://i.imgur.com/UxzcFEV.png", "Catfish and Gay"],
-		"_forceSkin": "https://i.imgur.com/QrW0kGk.png",
-		"_bold": "3",
-		"_color": "#de6bff",
-		"_icon": "yt",
-		"_ejectMass": {
-			"_numSides": "3"
+		"img": true,
+		"trex customImg": ["https://i.imgur.com/e6SeF0w.png", "https://i.imgur.com/a7jFdt5.png"],
+		"customImg": ["https://i.imgur.com/RxV0AaM.png", "https://i.imgur.com/Kiatxhz.png"],
+		"customIcon": ["https://i.imgur.com/4dcqWYN.png", "Aquliax 🍁"],
+		"hat": "Disabled",
+		"bold": "3",
+		"color": "#de6bff",
+		"icon": "yt",
+		"ejectMass": {
+			"numSides": "3"
 		}
 	},
 	"sexrex": {
