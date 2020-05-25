@@ -8,49 +8,11 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  * 3. Style
  */
-html {
-  /* 1 */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.5;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */
-  background: #fff;
-  color: #666;
-}
-/*
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
 /* Links
  ========================================================================== */
 /*
  * Remove the outline on focused links when they are also active or hovered
  */
-a:active,
-a:hover {
-  outline: none;
-}
-/*
- * Style
- */
-a,
-.uk-link {
-  color: #1e87f0;
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover,
-.uk-link:hover,
-.uk-link-toggle:hover .uk-link,
-.uk-link-toggle:focus .uk-link {
-  color: #0f6ecd;
-  text-decoration: underline;
-}
 /* Text-level semantics
  ========================================================================== */
 /*
@@ -6083,7 +6045,7 @@ ul.uk-nav-sub {
   margin-top: -10px;
 }
 [class*='uk-tooltip-bottom'] {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 [class*='uk-tooltip-left'] {
   margin-left: -10px;
@@ -12402,4 +12364,16 @@ iframe.uk-cover {
   h3 {
     page-break-after: avoid;
   }
+}
+
+h2{
+  color:#ededed
+}
+
+p{
+  color:#dbdbdb
+}
+
+li{
+  color:#dbdbdb
 }
