@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Zimek.tk - Vanis Skins</title>
+<meta name="description" content="Zimek's vanis skins gallery" />
+<meta content="text/html; charset=UTF-8" name="Content-Type" />
+<meta name="author" content="Zimek" />
+<meta content="article" property="og:type" />
+<meta content="Zimek.tk" property="og:title" />
+<meta content="./img/logo2.png" property="og:image" />
+<meta property="og:image" content="https://zimek.tk/img/logo2.png?v=4f32ecc8f43d">
+<meta name="og:description" content="Zimek's vanis skins gallery" />
+<link rel="shortcut icon" type="image/png" href="./img/logo2.png" />
+<link href="./main.css" rel="stylesheet">
+<link href="./uikit/uikit.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,200,600" rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium%20Web" rel="stylesheet">
+<script src="./jquery.js"></script>
+<script src="./uikit/uikit.js"></script>
+<script src="./main.js"></script>
+
+<script src="./uikit/uikit-icons.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+
+<body unselectable="on" onselectstart="return false;" oncontextmenu="return false">
+  <div class="main">
+
+  <div class="navbar" style="margin-top:-70px;">
+  <!--  <a href="https://zimek.tk/">
+    <img class="nav-icon" src="./img/logo1.png">
+    </a> -->
+    <center style="margin-top:5px;">
+      <span style="font-size:25px;color:#d1d1d1">
+      Zimek's Vanis skins gallery
+</span><br>
+<span id="total" style="font-size:15px;color:#d1d1d1">
+Total skins: 0
+</span>
+
+<span id="today" style="font-size:15px;margin-left:50px;color:#d1d1d1">
+Today skins: 0
+</span>
+<br>
+Sort by:
+<select id="sortby" style="background-color:#212121;color:#d1d1d1;" onchange="renderSkins()">
+<option value='1'>Newest</option>
+<option value='2'>Oldest</option>
+<option value='3'>Random</option>
+<!--<option value='4'>Most liked</option>-->
+</select> <span uk-icon="refresh" style="cursor:pointer" onclick="renderSkins()" id="refresh"></span>
+
+    </center>
+    <div class="navbar-socials">
+<!--      <a class="nav-link" target="_blank" uk-tooltip="Discord" href="https://discord.gg/zMZ3Evr" style="color: rgb(114, 137, 218);"><i class="fab fa-discord"></i></a>
+      <a class="nav-link" target="_blank" uk-tooltip="Twitter" href="" style="color: rgb(29, 161, 242);"><i class="fab fa-twitter"></i></a>
+      <a class="nav-link" target="_blank" uk-tooltip="YouTube" href="https://www.youtube.com/channel/UCzQLS2sTAPAYH7qyj0FXP3w" style="color: rgb(255, 0, 0);"><i class="fab fa-youtube"></i></a>
+      <a class="nav-link" target="_blank" uk-tooltip="Facebook" href="" style="color: rgb(59, 89, 152);"><i class="fab fa-facebook"></i></a> -->
+    </div>
+
+    <div class="navbar-items">
+<!--
+      <a href="https://zimek.tk/">
+        <div class="nav-item">
+         <div uk-icon="icon: home; ratio: 1.4;"></div> <div class="nav-item-text"><span>Home</span></div>
+       </div>
+      </a>
+
+      <a href="https://zimek.tk/blog">
+        <div class="nav-item">
+         <div style="margin-top:3px;" uk-icon="icon: comments; ratio: 1.4;"></div> <div class="nav-item-text"><span>Blog</span></div>
+       </div>
+      </a>
+
+      <a href="https://zimek.tk/contact">
+        <div class="nav-item">
+         <div style="margin-top:6px;" uk-icon="icon: mail; ratio: 1.4;"></div> <div class="nav-item-text"><span>Contact</span></div>
+       </div>
+      </a>
+-->
+    </div>
+  </div>
+
+    <div class="footer" style="margin-bottom:-50px;">
+      <div class="footer-content" style="padding-bottom:10;">
+      <!--  <span class="footer-text">© Zimek ; All rights reserved.</span> -->
+    <!--    <span class="footer-text"><a href="./privacy">Privacy Policy</a></span> -->
+    <!--  <span class="footer-text">Website by Zimek</span>-->
+      <div style="margin-bottom:50px;">
+      <a class="nav-link" target="_blank" uk-tooltip="YouTube" href="https://www.youtube.com/channel/UCzQLS2sTAPAYH7qyj0FXP3w" style="color: rgb(255, 0, 0);"><i class="fab fa-youtube"></i></a>
+      <a class="nav-link" target="_blank" uk-tooltip="Discord" href="https://discord.gg/zMZ3Evr" style="color: rgb(114, 137, 218);"><i class="fab fa-discord"></i></a>
+</div>
+      </div>
+    </div>
+
+    <div class="main-content" style="max-height:85%;overflow-y:scroll">
+
+
+    </div>
+
+  </div>
+
+<!-- Some animations -->
+  <script>
+  //  $(".main-background").css('transform', 'scale(1.15)')
+    $(".main-content").fadeIn(900)
+    $(".main-logo").css('transform', 'scale(1.1)')
+    $(".navbar").css('margin-top', '0px')
+    $(".footer").css('margin-bottom', '0px')
+    window.ondragstart = function() { return false; }
+  </script>
+
+</body>

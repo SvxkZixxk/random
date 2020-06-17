@@ -1,0 +1,201 @@
+
+/*
+
+Website design by Zimek
+
+ */
+
+ html {
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-size: 16px;
+   height:100%;
+   font-weight: normal;
+   line-height: 1.5;
+   -webkit-text-size-adjust: 100%;
+background-color: black;
+   color: #666;
+-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+ }
+
+ body {
+   margin: 0;
+   overflow: hidden;
+   height:100%;
+   background-color: black;
+ }
+
+ ::-webkit-scrollbar {
+   width: 10px;
+ }
+
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: #212121;
+ }
+
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #30f5ff;
+ }
+
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: #61f7ff;
+ }
+
+
+.main{
+text-align:center;
+background-color: black;
+height:100%;
+}
+
+.main-video {
+  background-color: #080808;
+  height:100%;
+  opacity: 0.5;
+  transition: 4s;
+  position: relative;
+}
+
+.main-background{
+  background-image: url("./img/background.png");
+background-color: black;
+height:100%;
+opacity: 0.5;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+transition: 4s;
+}
+
+.main-content{
+  padding:60px;
+  margin-top:40px;
+  display:none;
+}
+
+.main-logo{
+  transition: 2s;
+}
+
+.play-container{
+  margin-top:25px;
+  transition: 0.3s;
+}
+
+.play{
+  font-size:25px;
+  background-color:#c35696;
+  padding:5px 25px 5px 25px;
+  border-radius:10px;
+  transition: 0.3s;
+}
+
+.footer{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  transition: 0.9s;
+  height:50px;
+  text-align: center;
+  background-color: #080808;
+  z-index: 9;
+}
+
+.footer-text{
+  float:left;
+  font-size:15px;
+  margin-left:80px;
+  color:white;
+}
+
+.footer-content{
+  display: inline-block;
+  margin-right:35px;
+  margin-top:5px;
+}
+
+.footer-content a:hover{
+  color:#fe70c3;
+}
+
+.main-description{
+  color:#d1d1d1;
+  font-size:18px;
+}
+
+.play:hover{
+  background-color:#fe70c3;
+  color:white;
+  padding:5px 50px 5px 50px;
+  border-radius:5px;
+/*  box-shadow: 00px 0px 10px 5px #ff7ac8; */
+}
+
+ .nav-icon{
+   width:54.76px;
+   height:66.82px;
+   float:left;
+   margin-left:10%;
+ }
+
+.navbar{
+  width:100%;
+  height:100px;
+  background-color:#080808;
+  position: absolute;
+  top:0;
+  z-index: 99;
+  transition: 0.9s;
+}
+
+.navbar-socials{
+  float:right;
+  padding:10px;
+  margin-top:4px;
+  margin-right:3%;
+}
+
+.nav-link{
+  font-size:30px;
+  margin-left:20px;
+}
+
+
+.navbar-items{
+  float:right;
+  padding:10px;
+  margin-top:4px;
+  margin-right:2%;
+}
+
+.nav-item{
+  float:left;
+  transition: 0.2s;
+  font-size:23px;
+  margin-left:30px;
+  margin-top:2px;
+}
+
+.nav-item:hover{
+  color:#63f0ff;
+}
+
+.nav-item-text{
+  margin-left:5px;
+  margin-top:3px;
+  float:right;
+}
+
+.nav-item-active{
+  color:#00cae0
+}
+
+a{
+  color:#d1d1d1;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: light;
+  text-decoration: none;
+}
