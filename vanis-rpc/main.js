@@ -35,6 +35,8 @@ setTimeout(function(){
 
   window.rpc.connection.onopen = function(){
 
+window.rpc.connection.send(window.rpc.getRPCdata())
+
     window.rpc.interval = setInterval(function(){
       window.rpc.connection.send(window.rpc.getRPCdata())
     }, 15e3)
@@ -59,7 +61,7 @@ setTimeout(function(){
   window.afk.checkInterval = setInterval(function(){
     window.afk.lastMove += 5
 
-    if(window.afk.lastMove > 30)
+    if(window.afk.lastMove > 60)
     window.afk.afk = true
 
   }, 5000)
