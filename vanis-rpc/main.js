@@ -1,5 +1,5 @@
 
-if(!window.hp){ //check if hypertion 3.0 is detected
+if(!window.hypertion){ //check if hypertion 3.0 is detected
 window.rpc = {}
 
 window.rpc.getRPCdata = function() {
