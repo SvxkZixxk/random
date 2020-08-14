@@ -45,7 +45,8 @@ window.rpc.connection.onopen = function(){
 
 
 window.afk = {
-  afk:false
+  afk:false,
+  lastMove:0,
 }
 
 window.afk.lastMoveTrigger = function() {
