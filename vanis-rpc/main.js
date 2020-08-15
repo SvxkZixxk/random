@@ -4,11 +4,39 @@ setTimeout(function(){
   if(!window.hypertion){ //check if hypertion 3.0 is detected
   window.rpc = {}
 
+  window.rpc.data = {
+    vanis:{
+      largeImageKey:'vanis'
+    },
+    skins:{
+      largeImageKey:'skins',
+      largeImageText:'Vanis.io Skins'
+    },
+    data:{
+      tagTrue:'on a Tag',
+      tagFalse:'on No Tag',
+      playing:'Playing %tag%',
+      spectating:'Spectating %tag%',
+      dead:'Dead',
+      serverList:'%region% Server list',
+      replay:"Watching a replay",
+      afk:"AFK",
+      server:'%server%',
+      spectateAFK:"Spectating (AFK)",
+      serverListState:'',
+      replayState:'',
+      time:true,
+      loggedOut:'Login page',
+      skinsPage:'%page%'
+    }
+  }
+
   window.rpc.getRPCdata = function() {
       switch (location.host) {
           case 'vanis.io':
               return JSON.stringify({
                   type: 'vanis',
+                  data:window.rpc.data,
                   connected: $(".vanis-list-item.active .server-name").text() !== "",
                   replay: $(".vanis-list-item.active").length < 1 && $(".stats > div").eq(3).css("display") !== 'none',
                   spectate: $(".stats > div").eq(2).css("display") === 'none' && $("#overlay").is(":hidden"),
