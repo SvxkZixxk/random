@@ -49,6 +49,7 @@ setTimeout(function(){
           case 'skins.vanis.io':
           return JSON.stringify({
               type: 'skins',
+              data:window.rpc.data,
               skinsPage:$(".menu-item.selected").text(),
               loggedOut:$(".login").is(':visible'),
               afk: window.afk.afk,
