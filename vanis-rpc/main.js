@@ -1,4 +1,5 @@
 
+if(!window.rpc){
   window.rpc = {
     enabled:true
   }
@@ -96,3 +97,4 @@ window.rpc.connection.send(window.rpc.getRPCdata())
   }, 5000)
 
   $("body").attr("onmousemove", "window.afk.lastMoveTrigger()")
+}
