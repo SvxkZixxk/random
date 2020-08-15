@@ -1,8 +1,7 @@
 
-
-setTimeout(function(){
-  if(!window.hypertion){ //check if hypertion 3.0 is detected
-  window.rpc = {}
+  window.rpc = {
+    enabled:true
+  }
 
   window.rpc.data = {
       tagTrue:'on a Tag',
@@ -62,6 +61,8 @@ setTimeout(function(){
 
   window.rpc.connection.onopen = function(){
 
+
+if(window.rpc.enabled){
 window.rpc.connection.send(window.rpc.getRPCdata())
 
     window.rpc.interval = setInterval(function(){
@@ -71,6 +72,7 @@ window.rpc.connection.send(window.rpc.getRPCdata())
     window.rpc.connection.onclose = function(){
       clearInterval(window.rpc.interval)
     }
+}
 
   }
 
@@ -94,6 +96,3 @@ window.rpc.connection.send(window.rpc.getRPCdata())
   }, 5000)
 
   $("body").attr("onmousemove", "window.afk.lastMoveTrigger()")
-
-  }
-}, 5000)
