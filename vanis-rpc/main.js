@@ -5,14 +5,6 @@ setTimeout(function(){
   window.rpc = {}
 
   window.rpc.data = {
-    vanis:{
-      largeImageKey:'vanis'
-    },
-    skins:{
-      largeImageKey:'skins',
-      largeImageText:'Vanis.io Skins'
-    },
-    data:{
       tagTrue:'on a Tag',
       tagFalse:'on No Tag',
       playing:'Playing %tag%',
@@ -27,8 +19,14 @@ setTimeout(function(){
       replayState:'',
       time:true,
       loggedOut:'Login page',
-      skinsPage:'%page%'
-    }
+      skinsPage:'%page%',
+      vanis:{
+        largeImageKey:'vanis'
+      },
+      skins:{
+        largeImageKey:'skins',
+        largeImageText:'Vanis.io Skins'
+      },
   }
 
   window.rpc.getRPCdata = function() {
