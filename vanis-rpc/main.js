@@ -67,7 +67,6 @@ if(!window.rpc){
 
 
 if(window.rpc.enabled){
-window.rpc.connection.send(window.rpc.getRPCdata())
 
     window.rpc.interval = setInterval(function(){
       window.rpc.connection.send(window.rpc.getRPCdata())
