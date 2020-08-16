@@ -1,7 +1,8 @@
 
 if(!window.rpc){
   window.rpc = {
-    enabled:true
+    enabled:true,
+    vanisAppId:'743911345610686568'
   }
 
   window.rpc.data = {
@@ -35,6 +36,7 @@ if(!window.rpc){
               return JSON.stringify({
                   type: 'vanis',
                   data:window.rpc.data,
+                  appID:window.rpc.vanisAppId,
                   connected: $(".vanis-list-item.active .server-name").text() !== "",
                   replay: $(".vanis-list-item.active").length < 1 && $(".stats > div").eq(3).css("display") !== 'none',
                   spectate: $(".stats > div").eq(2).css("display") === 'none' && $("#overlay").is(":hidden"),
@@ -50,6 +52,7 @@ if(!window.rpc){
           return JSON.stringify({
               type: 'skins',
               data:window.rpc.data,
+              appID:'744316433080778784',
               skinsPage:$(".menu-item.selected").text(),
               loggedOut:$(".login").is(':visible'),
               afk: window.afk.afk,
