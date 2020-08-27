@@ -60,6 +60,23 @@ if(!window.rpc){
       }
   }
 
+    window.afk = {
+      afk:false,
+      lastMove:0,
+    }
+
+    window.afk.lastMoveTrigger = function() {
+      window.afk.lastMove = 0
+      window.afk.afk = false
+    }
+
+    window.afk.checkInterval = setInterval(function(){
+      window.afk.lastMove += 5
+
+      if(window.afk.lastMove > 60)
+      window.afk.afk = true
+
+    }, 5000)
 
   window.rpc.connection = new WebSocket("ws://127.0.0.1:2137");
 
@@ -78,25 +95,6 @@ if(window.rpc.enabled){
 }
 
   }
-
-
-  window.afk = {
-    afk:false,
-    lastMove:0,
-  }
-
-  window.afk.lastMoveTrigger = function() {
-    window.afk.lastMove = 0
-    window.afk.afk = false
-  }
-
-  window.afk.checkInterval = setInterval(function(){
-    window.afk.lastMove += 5
-
-    if(window.afk.lastMove > 60)
-    window.afk.afk = true
-
-  }, 5000)
 
   $("body").attr("onmousemove", "window.afk.lastMoveTrigger()")
 }
