@@ -1,0 +1,93 @@
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link href="./vanis.css" rel="stylesheet">
+
+<style>
+    html{
+        background-color:black;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    body{
+        margin:0;
+        color:#dadada;
+        background:radial-gradient(rgba(0,17,33,.75) 200px,rgba(0,0,0,.75));
+    }
+
+    #virusDisplay canvas{
+        border:rgb(0, 34, 66) solid 3px;
+        background-color:rgb(34, 34, 34)
+    }
+
+    #container{
+        text-align: center;
+    }
+
+    #container div {
+        display:inline-block
+    }
+
+    #virusDisplay{
+        
+    }
+
+    h1{
+        font-size:40px
+    }
+
+    input[type='color']{
+        padding:0;
+        margin:0;
+        width: 25px;
+        cursor:pointer;
+        height:25px;
+        background-color:transparent;
+        border:0
+    }
+
+    .option{
+        font-weight: bold;
+        padding:10px 15px 10px 15px;
+        font-size:20px;
+        _float:left;
+        margin:auto;
+        cursor:pointer
+    }
+
+    .btn {
+        cursor:pointer;
+        background-color:#b1700f;
+        color:white;
+        border:0;
+        font-size:17px;
+        padding:5px 10px 5px 10px;
+        border-radius:5px;
+        
+    }
+
+    .selected{
+        border:#b1700f solid 1px
+    }
+
+    #content{margin-top:50px;}
+
+</style>
+
+<div id="container">
+    <div id="top">
+        <h1>Vanis Stylizer</h1><br>
+        <span class='option selected'>VIRUS</span>
+    </div><br>
+    <div id="content">
+        <div id="virusDisplay"></div><br><br>
+        Color: <input id='virusColor' type='color' oninput="renderers.virus.changeColor(document.getElementById('virusColor').value)"> <span id='virusColorText'></span><br>
+        <br>
+        <button class='btn' onclick="renderers.virus.save()">Save virus</button>
+    </div>
+</div>
+
+<span style="position: fixed; bottom:0">Vanis Stylizer v0.1 by Zimek</span>
+
+<script src="./js/pixi.js"></script>
+<script src="./js/main.js"></script>
