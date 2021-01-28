@@ -13,7 +13,7 @@ document.getElementById('virusDisplay').appendChild(renderers.virus.app.view)
 renderers.virus.container = new PIXI.Container()
 renderers.virus.app.stage.addChild(renderers.virus.container)
 
-renderers.virus.image = PIXI.Sprite.from('https://zimek.tk/viruses/white.png')
+renderers.virus.image = PIXI.Sprite.from('./img/virus.png') //https://zimek.tk/viruses/white.png
 renderers.virus.container.addChild(renderers.virus.image)
 
 function render(x) {
